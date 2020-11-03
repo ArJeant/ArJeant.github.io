@@ -10,13 +10,15 @@ img{
 	display: inline-block;
 }
 body{
-	background-image: url(https://blog.aulaformativa.com/wp-content/uploads/2014/03/creacion-de-paginas-web-blanco-como-fondo-702x336.jpg);
+	scroll-behavior: smooth;
+	background-image: url(https://st2.depositphotos.com/5262887/10258/i/950/depositphotos_102589358-stock-photo-old-white-wall-texture-background.jpg);
 }
 h2{
 	text-align: center;
 	padding-bottom: 15px;
 	font-family: 'Amatic SC', cursive;
 	font-size: 45px;
+	font-weight: 600;
 }
 p{
 	font-family: 'Special Elite', cursive;
@@ -28,14 +30,14 @@ a{
 header{
 	min-width: 100vw;
 	width: 100vw;
-	height: 28vh;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	background-color: black;
 }
 i{
-	font-size: 50px;
+	font-size: 25px;
 	color: white;
 }
 .div__header{
@@ -51,6 +53,7 @@ i{
 	font-family: 'Henny Penny', cursive;
 	font-size: 40px;
 	color: white;
+	text-shadow: 2px 5px 5px #5ee0cb;
 }
 .img__header{
 	background-color: white;
@@ -68,8 +71,10 @@ i{
 	object-position: 50% 50%;	
 }
 .nav{
+	min-width: 100vw;
 	width: 100vw;
-	min-height: 20%;
+	height: 30%;
+	min-height: 30%;
 	flex-grow: 2;
 }
 .ul__nav{
@@ -79,10 +84,10 @@ i{
 	justify-content: space-between;
 }
 .a__nav{
-	align-self: center;
 	height: 40%;
-	padding: 2px 5px 0px 5px;
+	padding: 2px 5px 5px 5px;
 	text-align: center;
+
 }
 .li__nav{
 	display: inline-block;
@@ -91,18 +96,21 @@ i{
 	font-family: 'Amatic SC', cursive;
 	font-size: 27px;
 	color: white;
-	transition: .6s;
+	transition: .5s;
+	border: 3px double #fff;
+	padding: 5px;
+	box-shadow: 5px 5px 0px #fff;
 }
 .li__nav:hover{
-	line-height: 10px;
+	transform: translateY(-4px);
 	font-weight: 900;
 	color: #5ee0cb;
 }
 .article__creepy{
 	display: flex;
 	flex-direction: column;
-	height: 150em;
-	justify-content: space-between;
+	height: 180em;
+	justify-content: space-around;
 }
 .h1__creepy{
 	font-family: 'Cinzel', serif;
@@ -115,15 +123,16 @@ i{
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: 500px;
-	overflow: auto;
+	height: 650px;
 	padding-right: 10px;
 }
 .div__section{
 	display: flex;
 	flex-direction: column;
 	order: 2;
-	height: 80%;
+	height: 110%;
+	overflow: auto;
+	flex-grow: 1;
 }
 .div__section p{
 	width: 100vw;
@@ -131,37 +140,63 @@ i{
 	overflow: auto;
 	padding: 15px;
 	text-align: justify;
+	border: 5px double black;
+	border-left-width: 0px;
+	border-right-width: 0px;
 }
 
 .img__section{
 	background-color: red;
-	height: 80%;
-	width: 50vw;
+	height: 50%;
+	width: 60vw;
 	order: 1;
 	align-self: center;
 }
 .img__section img{
+	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
 
 aside{
-	/*left: -120px;*/
+	left: -160px;
 	position: fixed;
 	top: 50%;
 	z-index: 100;
 	height: 270px;
+	width: 170px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: red;
+	background-color: #93E7DA;
+	border-radius: 30px;
+	transition: .5s;
 }
-.aside{
+aside:hover{
+	left: 0px;
+}
+.aside__h3{
 	padding: 10px;
 	font-family: 'Amatic SC', cursive;
 	font-size: 30px;
 	font-weight: 600;
+	transition: .5s;
 }
+.aside__h3:hover{
+	font-size: 37px;
+}
+.div__aside{
+	position: absolute;
+	z-index: 100;
+	top: 45%;
+	right: -17px; 
+
+}
+#i__aside{
+	font-size: 35px;
+	color: #000;
+}
+
 footer{
 	width: 100vw;
 	height: 70px;
@@ -180,8 +215,73 @@ footer{
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 25px;
 	color: #fff;
+	transition: .5s;
 }
+.li__footer:hover{
+	transform: translateY(-4px);
+	color: #5ee0cb;
+}
+@media only screen and (min-width: 600px){
+	header{
+		height: 400px;
+	}
+	.div__header{
+		height: 60%;
+		justify-content: flex-start;
+	}
+	.titulo{
+		font-size: 80px;
 
+	}
+	.img__header{
+		max-width: 200px;
+		max-height: 200px;
+	 }
+	 .ul__nav{
+	 	justify-content: space-around;
+	 }
+	 .li__nav{
+	 	height: 100%;
+	 	width: 100%;
+	 	line-height: 80px;
+	 	font-size: 40px;
+	 }
+	 .a__nav{
+	 	width: 300px;
+	 	height: 100px;
+	 }
+	 .h1__creepy{
+	 	font-size: 70px;
+	 	margin-top: 8%;
+	 	align-self: center;
+	 }
+	 .article__creepy{
+	 	height: 280em;
+	 }
+	 .section{
+	 	height: 53em;
+	 }
+	 .img__section{
+	 	height: 40%;
+	 	width: 30%;
+	 	background-color: red;
+	 }
+	 .img__section img{
+	 	object-fit: cover;
+	 	object-position: top;
+	 }
+	 .div__section{
+	 	overflow-x: hidden;
+	 }
+	 .div__section p{
+	 	overflow-x: hidden;
+	 }
+	 aside{
+	 	height: 350px;
+	 	top: 40%;
+	 }
+
+}
 
 
 
