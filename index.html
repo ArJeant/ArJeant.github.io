@@ -1,130 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bestiario Práctica</title>
-	<link rel="stylesheet" tybe="text/css" href="normalize.css">
-	<link rel="stylesheet" tybe="text/css" href="diseño.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Syne+Mono&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Syne+Mono&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Syne+Mono&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Syne+Mono&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<script src="https://kit.fontawesome.com/08452800ec.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div class="container">
-	<header>
-		<div class="div__header">
-			<div class="img__header"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkBjkddUvY0MMB5n-5HgYfBG2XAA1dqCZFYQ&usqp=CAU"></div>
-			<p class="titulo">Bestiario</p>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>U2Bee</title>
+		<link rel="stylesheet" href="diseño.css">
+		<link rel="stylesheet" href="normalize.css">
+		<script src="https://kit.fontawesome.com/08452800ec.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<div class="grid__container-main">
+			<header>
+				<p class="logo">U</p><p id="log">2</p><p class="logo">Bee</p>
+			</header>
+
+			<article class="article-main">
+				<h1>Una pequeña descripción de un gran artista</h1>
+
+				<section class="section-main">
+					<a href="dalas.html"><div class="img-main"><img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5712d0c5-762f-4102-b977-784b310532a2-profile_image-300x300.png"></div></a>
+					<h2>Dalas Review</h2>
+					<p class="p-main">
+						Daniel José Santomé Lemus <br>
+						8 años en YouTube <br>
+						Sube vídeos sobre críticas a personajes de Internet y temas en tendencia.
+					</p>
+				</section>
+
+				<section class="section-main">
+					<a href="alva.html"><div class="img-main"><img src="data:image/png;base64,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"></div></a>
+					<h2>Alva Majo</h2>
+					<p class="p-main">
+						5 años en Youtube <br>
+						Desarrollador de videojuegos indie.
+					</p>
+				</section>
+
+				<section class="section-main">
+					<a href="natalan.html"><div class="img-main"><img src="data:image/jpeg;base64,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"></div></a>
+					<h2>Natalan</h2>
+					<p class="p-main">
+						Alan <br>
+						2 años en YouTube <br>
+						Sube vídeos relacionados al gameplay y videojuegos.
+					</p>
+				</section>
+
+				<section class="section-main">
+					<a href="sara.html"><div class="img-main"><img src="https://yt3.ggpht.com/ytc/AAUvwngSDsQ7ua8HS0l7nKJx918hbn7HnfjdCZg83BAong=s900-c-k-c0x00ffffff-no-rj"></div></a>
+					<h2>Sara Kibum</h2>
+					<p class="p-main">
+						Sara Moreno Santamaría <br>
+						3 años en YouTube <br>
+						Sube vlogs de estilo de vida glamurosa, belleza y moda.
+					</p>
+				</section>
+
+				<section class="section-main">
+					<a href="javi.html"><div class="img-main"><img src="https://static.wikia.nocookie.net/youtubepedia/images/5/58/JaviOliveira4.jpg/revision/latest?cb=20191217144226&path-prefix=es"></div></a>
+					<h2>Javi Oliveira</h2>
+					<p class="p-main">
+						Francisco Javier Oliveira <br>
+						5 años en Youtube <br>
+						Sube contenido de críticas sobre otros Youtubers u otros hechos.
+					</p>
+				</section>
+
+				<section class="section-main">
+					<a href="ocho.html"><div class="img-main"><img src="https://static.wikia.nocookie.net/youtubepedia/images/c/cf/8cho_2.jpg/revision/latest?cb=20180522083828&path-prefix=es"></div></a>
+					<h2>8cho</h2>
+					<p class="p-main">
+						Daniel García Sánchez <br>
+						6 años en Youtube <br>
+						Sube tops sobre temas relacionados con hechos curiosos, además de gameplays.
+					</p>
+				</section>
+
+			</article>
+
+			<footer class="footer-main">
+				<div class="icon-footer">
+					<a href="https://www.facebook.com/areamny.petitcastillo"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.instagram.com/arjeap/?hl=es-la"><i class="fab fa-instagram"></i></a>
+					<a href="https://twitter.com/Arjeant29"><i class="fab fa-twitter"></i></a>
+				</div>
+				<p>Copyright © Todos los derechos reservados.</p>
+			</footer>
 		</div>
-		<nav class="nav">
-			<ul class="ul__nav">
-				<a href="" class="a__nav"><li class="li__nav">Más Bestiarios</li></a>
-				<a href="" class="a__nav"><li class="li__nav">Únetenos</li></a>
-				<a href="" class="a__nav"><li class="li__nav">Sobre Nosotros</li></a>
-			</ul>
-		</nav>
-	</header>
+	</body>
 
-<article class="article__creepy">
-	<h1 class="h1__creepy">Creepypastas</h1>
-	<section class="section">
-		<div class="div__section">
-			<h2 id="siren">Siren Head</h2>
-			<p>Es una criatura extraña que posee una gran altura, por la cual es bien reconocido. Se le conoce como un ser hostil y depredador que acecha por la oscuridad de los bosques, y a veces, en algunas urbanidades. Su cabeza es un par de sirenas con bocas que usa para matar a cualquier víctima.
-			<br>
-			<br>
-			Fue descubierto por las montañas del Himalaya en 1986 por algunos oficiales de la zona junto con un grupo de guarda bosques. La unidad terminó informando una gran alarma sonora, que terminó haciendo que la mitad de la tropa quedara sorda, y la otra mitad con muerte inmediata debido al gran sonido que explotó los cerebros del personal.
-			<br>
-			<br>
-			Siren Head es una criatura humanoide de 40 pies de altura con un marco casi esquelético muy demacrado cubierto de carne seca y momificada del color del metal oxidado. sus extremidades son desproporcionadamente largas y delgadas, con brazos tan largos como sus piernas, que terminan en manos enormes y huesudas. Donde estarían su cabeza y su cuello es un delgado polo de carne con dos sirenas unidas a él (de ahí el nombre), y varios cables negros que serpentean alrededor de su "cuello" y en sus hombros superiores. Estos altavoces son las únicas partes metálicas de su cuerpo, fusionadas en el cuello por zarcillos de piel y capaces de girar alrededor de él como la cabeza de un búho. Algunas imágenes muestran los altavoces de Siren Head con mandíbulas dentudas y sin labios y una lengua larga y retráctil, aunque Henderson ha dicho que los dientes solo son visibles en cierta frecuencia de radio.
-			<br>
-			<br>
-			Fiel a su nombre, los altavoces de Siren Head pueden reproducir varios tipos de ruidos fuertes, generalmente sirenas de ataque aéreo, música confusa, conversaciones o transmisiones de emergencia.
-			</p>
-		</div>
-			<div class="img__section"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0uoQdMwrX8uVhUv9dtX4aS0WexVwaPugnLQ&usqp=CAU" title="Siren Head"></div>
-	</section>
-
-	<section class="section">
-		<div class="div__section">
-			<h2 id="banshee">Banshee</h2>
-			<p>Son las hadas irlandesas de la muerte. Su nombre significa “mujer hada” y “mujer de las colinas”, ya que en ocasiones aparece caminando errante por las colinas, donde incluso permanece varios días sin rumbo fijo.<br>
-			<br>
-			Su apariencia es la de una mujer etérea, en ocasiones una joven doncella y, en otras, una bruja vieja y repugnante. Su cara es pálida y tiene los ojos enrojecidos, casi ensangrentados, por el dolor y el llanto.<br>
-			<br>
-			Las banshees anuncian con su llanto y su grito que la muerte está cerca. Su canto es estridente y aterrador, otras veces es un sollozo horrible que hiela la sangre y que sólo puede escuchar la persona que va a morir. Algunas banshees que están emparentadas o vinculadas con una familia concreta, y su canto se escucha cada vez que perece algún miembro dicha familia. En estos casos, no sólo son escuchadas por el moribundo sino por todos los familiares.<br>
-			<br>
-			Hay veces en que sólo se las oye y otras en que, además, se las ve.</p>
-		</div>
-		<div class="img__section"><img src="https://cdnb.artstation.com/p/assets/images/images/011/384/797/large/bruno-ferazzoli-banshee.jpg?1529331894" title="Banshee"></div>
-	</section>
-
-	<section class="section">
-		<div class="div__section">
-			<h2 id="pyramid">Pyramid Head</h2>
-			<p>Este personaje es un monstruo de figura humana que siempre lleva un enorme casco piramidal sobre su cabeza. Es representado como un castigador o verdugo, es sumamente cruel, violento y suele asesinar a aquellas personas que son devoradas por la culpa y sienten la necesidad de ser castigadas.<br>
-			<br>
-			Pyramid Head nunca habla, pero se pueden oír gruñidos y alaridos que tienen origen en él. Demuestra ser un ser con mucha brutalidad, matando tanto monstruos como personas a su gusto, a veces con comportamiento de violador.<br>
-			<br>
-			Suele ir armado con un enorme cuchillo, pero también puede portar una larga lanza. Sin embargo, también tiene la capacidad de estrangular y someter a quien quiera y puede brillar por sí mismo con un color rojo fuerte.</p>
-		</div>
-		<div class="img__section"><img src="https://i.pinimg.com/originals/22/31/ec/2231ec3f81a4308dd72d4e0d187696dd.jpg" title="Pyramid Head"></div>
-	</section>
-
-	<section class="section">
-		<div class="div__section">
-			<h2 id="rake">The Rake</h2>
-			<p>Se trata de una amenaza sobrenatural. Su leyenda afirma que cualquiera que establezca un contacto visual con él, se convierte en su víctima, ya que sus ojos son malvados están cargados de energía maligna en busca de almas para absorber y seguir afianzando su poder en el mundo real.<br>
-			<br>
-			Hay muchas especulaciones sobre lo que el Rake podría ser, que van desde un experimento de alta confidencialidad que se ha ido de las manos de los científicos, hasta la idea de que puede ser un tipo de alienígena o demonio que asedia a sus víctimas.<br>
-			<br>
-			Los testigos describen a la criatura humanoide como que tiene la piel pálida o gris, unas garras o manos muy delgadas y largas, con ojos grandes y oscuros. Parece tener una mente, y en algunas documentaciones y encuentros muy antiguos con la criatura, dicen que puede hablar.<br>
-			<br>
-			The Rake se encarga de despedazar a las personas que no huyen.</p>
-		</div>
-		<div class="img__section"><img src="https://pm1.narvii.com/6829/a42f9017b28d7303ab9ae14460e2ef1eb4800ba9v2_hq.jpg" title="The Rake"></div>
-	</section>
-
-	<section class="section">
-		<div class="div__section">
-			<h2 id="wendigo">Wendigo</h2>
-			<p>
-				Se le describe como un ser humanoide de aspecto bestial, al que usualmente se le relaciona con el canibalismo. La leyenda presta su nombre a un supuesto término moderno, psicosis por windigo, síndrome caracterizado por la presencia de síntomas tales como un intenso deseo por comer carne humana y el temor de quien lo sufre de ser un caníbal.<br>
-				<br>
-				Los wendigos son seres sobrenaturales malévolos, antropófagos y poseedores de un gran poder espiritual. Están fuertemente asociados con el invierno, el norte, el frío, la hambruna y la inanición.<br>
-				<br>
-				Existe la creencia de que los seres humanos pueden convertirse en este monstruo si alguna vez practican el canibalismo o si son poseídos por el espíritu demoníaco de un wendigo, a menudo durante un sueño. En cuanto se da la transformación, la persona se volverá violenta y obsesionada con el consumo de carne humana.<br>
-				<br>
-				Posee largas extremidades, dedos finos y alargados como garras, un rostro terrorífico y dientes afilados. El wendigo es tan alto como una persona pero, según la leyenda, su estatura crece de manera proporcional al tamaño de las víctimas que va devorando. Sus ojos, lechosos, parecen salirse de sus órbitas. Los wendigos conservan algunos remanentes de cabello en sus cabezas. Poseen también cuernos de alce. Su piel es dura como una coraza, y solo el fuego puede hacerles retroceder.</p>
-			</div>
-			<div class="img__section"><img src="https://i.pinimg.com/originals/b6/b4/eb/b6b4ebe838770273e2cc8cf23fdeba19.jpg" title="Wendigo"></div>
-	</section>
-</article>
-
-<footer>
-	<ul class="ul__footer">
-		<a href="" class="a__footer"><li class="li__footer"><i class="fab fa-facebook"></i>Facebook</li></a>
-		<a href="" class="a__footer"><li class="li__footer"><i class="fab fa-instagram"></i>Instagram</li></a>
-		<a href="" class="a__footer"><li class="li__footer"><i class="fab fa-twitter"></i>Twitter</li></a>
-	</ul>
-</footer>
-</div>
-
-<aside>
-	<div class="div__aside"><i class="fas fa-map-signs" id="i__aside"></i></div>
-	<a href="#siren"><h3 class="aside__h3">Siren Head</h3></a>
-	<a href="#banshee"><h3 class="aside__h3">Banshee</h3></a>
-	<a href="#pyramid"><h3 class="aside__h3">Piramid Head</h3></a>
-	<a href="#rake"><h3 class="aside__h3">The Rake</h3></a>
-	<a href="#wendigo"><h3 class="aside__h3">Wendigo</h3></a>
-</aside>
-
-	
-</body>
 </html>
